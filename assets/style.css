@@ -2,9 +2,11 @@ body {
 	max-width: 1920px;
 	margin: auto;
 }
+
 * {
 	font-family: 'Inter';
 	font-style: normal;
+	overscroll-behavior: none;
 }
 .top-header {
 	background-color: white;
