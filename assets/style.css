@@ -103,11 +103,13 @@ body {
 	justify-content: center;
 }
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+	cursor: pointer;
 	color: #fff;
 	background-color: #BEB45A;
 	border-radius:0 ;
 }
 .nav-pills .nav-link {
+	cursor: pointer;
 	color: #000
 }
 .item-column {
