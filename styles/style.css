@@ -106,7 +106,7 @@ body {
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
 	cursor: pointer;
 	color: #fff;
-	background-color: #BEB45A;
+	background-color: black;
 	border-radius:0 ;
 }
 .nav-pills .nav-link {
@@ -201,6 +201,7 @@ body {
 	position: relative;
 	padding-inline: 100px;
 	padding-block: 100px;
+	padding-top: 2.5rem;
 }
 
 #contact .container {
@@ -231,22 +232,63 @@ form input {
 	width: 100%;
 	background-color: transparent;
 	border: solid 1px;
+	padding: 0.5rem;
 	height: 2.5em;
 	margin-bottom: 20px;
+}
+
+form input:focus {
+	background-color: #ffffff33;
+	outline: solid 1px;
 }
 
 form textarea {
 	width: 100%;
 	background-color: transparent;
 	border: solid 1px;
+	padding: 0.5rem;
 	height: 5em;
 	line-height: 2.5em;
 	font-size: 1.2em;
 	margin-bottom: 20px;
 }
+
+form textarea:focus {
+	background-color: #ffffff33;
+	outline: solid 1px;
+}
+
 input[type="submit"] {
-	background-color: #BEB45A;
+	color: white;
+	background-color: black;
 	padding: .5em 1em
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+	background-color: #2bb8d8;
+	border-radius: 0.5rem;
+	padding: 1.4rem;
+	transition: 0.2s ease-in;
+}
+
+.carousel-control-prev-icon:hover, .carousel-control-next-icon:hover {
+	background-color: #2bb8d8ab;
+	transition: 0.2s ease-in;
+}
+
+.carousel-indicators [data-bs-target] {
+	height: 0.3rem;
+	width: 4rem;
+}
+
+.carousel-indicators:focus {
+	outline: n;
+}
+
+#contact-title {
+	padding: 0rem;
+	padding-bottom: 4rem;
+	margin: 0;
 }
 
 @media all and (max-width: 1180px) {
