@@ -47,8 +47,7 @@ body {
 #about {
 	display: flex;
 	background-color: #F6D2B8;
-	padding-inline: 100px;
-	padding-block: 100px;
+	padding: 100px;
 	position: relative;
 }
 
@@ -215,6 +214,19 @@ body {
 	display: flex;
 }
 
+img.d-block.w-100 {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  height: auto;
+}
+
+#about-me img {
+  aspect-ratio: 3 / 4;
+  width: 100%;
+  height: auto;
+}
+
+
 .picture.right::before {
 	content: ' ';
 	background-color: #BEB45A;
@@ -319,7 +331,6 @@ input[type="submit"] {
 @media all and (max-width: 1000px) {
 	#about{
 		flex-direction: column;
-
 	}
 	.picture {
 		width: 50%;
@@ -328,7 +339,6 @@ input[type="submit"] {
 		width: 100%;
 		height: 30%;
 		position: absolute;
-		bottom: auto;
 		top: 0;
 		left: 0;
 		z-index: -1;
@@ -409,4 +419,3 @@ input[type="submit"] {
 		width: 80%;
 	}
 }
-
